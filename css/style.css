@@ -8,6 +8,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    /* background-color: rgba(10, 200, 45, 0.4) !important; */
 }
 
 body {
