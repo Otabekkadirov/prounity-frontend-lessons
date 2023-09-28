@@ -23,16 +23,28 @@
 .task__item {
     border-top: 2px solid #333;
 }
+.task__item::marker {
+    font-style: italic;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: larger;
+}
+
 .task__link {
-    display: block;
+    display: inline-block;
+    width: calc(100% - 100px);
     text-decoration: none;
     font-style: italic;
     font-weight: 600;
     color: #333;
-    background-color: #ddd;
     transition: all 0.1s linear;
 }
-.task__link:hover {
+.task__list {
+    list-style: decimal;
+    list-style-position: inside;
+    vertical-align: middle;
+}
+.task__item:hover {
     background-color: rgba(255, 255, 255, 0.6);
     color: crimson;
 }
